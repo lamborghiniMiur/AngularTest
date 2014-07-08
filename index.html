@@ -1,17 +1,36 @@
+<!DOCTYPE html>
 <html ng-app>
-	<head>
-		<title>My Web Site</title>
-		<link rel="stylesheet" href="css/main.css" />
-		<script src="js/angular.min.js"></script>
-		<script src="js/controllers.js"></script>
-	</head>
-	<body>
-		<div ng-controller="HelloController">
-			<h2>This is my personal site.</h2>
-			<p>{{greeting.text}},World!!</p>
-			<input ng-model="greeting.text">
-			<a href="http://myproject.com/about">More info</a>
+<head>
+<title>My Web Site</title>
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/kickstart.css" media="all" /> <!-- KICKSTART -->
+<script src="js/angular.min.js"></script>
+<script src="js/controllers.js"></script>
+<!-- <script src="js/jquery-2.1.0.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/kickstart.js"></script> <!-- KICKSTART -->
+</head>
+<body>
+	<div ng-controller="HelloController">
+		<ul class="tabs left">
+			<li><a href="#tabr1">Tab1</a></li>
+			<li><a href="#tabr2">Tab2</a></li>
+			<li><a href="#tabr3">Tab3</a></li>
+		</ul>
+		<div id="tabr1" class="tab-content">
+		Tab1
+		<h2>This is my personal site.</h2>
+		<p>{{greeting.text}},World!!</p>
+		<input ng-model="greeting.text">
 		</div>
-	</body>
+		<div id="tabr2" class="tab-content">
+		Tab2
+		</div>
+		<div id="tabr3" class="tab-content">
+		Tab3
+		</div>
+
+	</div>
+</body>
 </html>
 
