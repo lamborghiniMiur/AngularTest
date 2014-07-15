@@ -25,6 +25,11 @@
 		</div>
 		<div id="tabr2" class="tab-content">
 		Tab2
+		<form ng-submit="requestFunding()" ng-controller="StartUpController">
+			見込み：<input ng-change="computeNeeded" ng-model="startingEstimate>
+			推奨額：{{needed}}
+			<input type="checkbox" ng-model="youCheckedit">
+		</form>
 		</div>
 		<div id="tabr3" class="tab-content">
 		Tab3

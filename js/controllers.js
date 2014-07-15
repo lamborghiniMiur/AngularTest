@@ -15,4 +15,10 @@ function CartController($scope) {
 	$scope.remove = function(index) {
 		$scope.items.splice(index,1);
 	}
+
+function StartUpController($scope) {
+	$scope.computeNeeded = function() {
+
+	}
+}
 }
